@@ -13,19 +13,24 @@ Na pasta do projeto, execute `node server.mjs` e abra `http://localhost:8000`. N
 - `assets/images/kroma-hero-mobile.png` e `assets/images/kroma-identidade-mobile.png`: composições verticais dedicadas às seções inicial e “Eu tenho identidade” em telas de até 760 px. As versões desktop seguem nos caminhos existentes.
 - `assets/images/personalizacao-conceito.jpg`: estudo visual ousado da seção Personalização. É conceitual, não um serviço realizado.
 - `assets/images/peca-adesivos-conceito.jpg`, `peca-retrovisores-conceito.jpg` e `peca-carenagem-conceito.jpg`: imagens conceituais dos cards de Peças; não confirmam estoque, preço ou compatibilidade.
+- `assets/images/kromas-showcase.png`: painel conceitual gerado para os cards de autopropelidos, e-bikes, triciclos e patinetes na nova vitrine. As imagens são estudos, não produtos ou projetos confirmados.
+- `kromas.html`, `kromas.css` e `kromas.js`: nova vitrine KROMAS, filtros, cartões, consulta pelo WhatsApp e visualizador 3D conceitual com rotação e troca de cor. Edite nomes, descrições, categorias e imagens no array `products` em `kromas.js`.
 - `assets/images/estudo-antes.jpg` e `estudo-depois.jpg`: par de imagens geradas para um estudo visual conceitual. A seção identifica que não são fotos de um serviço realizado. Substitua pelo antes/depois real ao publicar o primeiro projeto.
 - A seção de depoimentos usa cartões em perspectiva com rolagem vertical. Os textos e nomes atuais são exemplos demonstrativos; substitua por depoimentos reais autorizados antes de usá-los como avaliações de clientes.
 - `assets/illustrations/`: ilustrações temporárias do catálogo. Substitua pelas fotos reais das peças quando estiverem disponíveis. Atualize os caminhos no `app.js`.
-- `app.js`: objeto `CONFIG` no início do arquivo. Edite o número de WhatsApp em um único lugar, URL do Instagram e itens do catálogo (nome, descrição, compatibilidade, imagem e mensagem). Preços e prazos não foram presumidos.
+- `contact-config.js`: número de WhatsApp compartilhado pelas duas páginas. Edite aqui o número com DDI e DDD, só com dígitos.
+- `app.js`: URL do Instagram e catálogo atual de peças (nome, descrição, compatibilidade, imagem e mensagem). Preços e prazos não foram presumidos.
 - `index.html`: textos, estrutura das seções e contatos/localidade exibidos.
 - `styles.css`: cores, tipografia, layout e comportamento responsivo.
+- A fonte Nighty licenciada não foi fornecida; por enquanto as páginas usam Righteous como alternativa retrô do Google Fonts. Os arquivos de logo aprovados mantêm o lettering oficial KROMA.
 
 ## Dados pendentes para lançar
 
-- Número oficial de WhatsApp com DDI e DDD; perfil e URL do Instagram.
+- Perfil e URL oficial do Instagram.
 - Fotos reais do antes, processo e depois da primeira motinha; fotos reais dos produtos.
 - Peças efetivamente disponíveis, modelos compatíveis e confirmação do fornecedor.
 - Preços e prazos atuais de cada peça, quando confirmados pelo fornecedor.
+- Arquivo/licença da fonte Nighty, se quiser trocar a alternativa Righteous por ela.
 - Endereço exato ou área/política de atendimento local, se quiser exibir no site.
 - Revisar os textos e o escopo dos serviços após o primeiro projeto.
 

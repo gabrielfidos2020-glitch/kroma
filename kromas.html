@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#170a20">
+  <meta name="description" content="Explore conceitos de personalização KROMA para diferentes tipos de mobilidade elétrica.">
+  <title>KROMAS — Personalizações KROMA</title>
+  <link rel="icon" type="image/png" href="assets/brand/kroma-simbolo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Righteous&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="kromas.css">
+</head>
+<body>
+  <a class="skip" href="#vitrine">Pular para as personalizações</a>
+  <header class="k-header"><a href="index.html#inicio" aria-label="KROMA — início"><img class="k-logo" src="assets/brand/kroma-logo-vertical.png" alt="KROMA"></a><nav aria-label="Navegação principal"><a href="index.html#personalizacao">Personalização</a><a href="#vitrine" aria-current="page"><img class="k-wordmark-nav" src="assets/brand/kroma-wordmark.png" alt="KROMA"><span>S</span></a><a href="index.html#projetos">Projetos</a></nav><a class="k-back" href="index.html">Voltar ao site <span>↗</span></a></header>
+  <main>
+    <section class="k-intro"><p class="k-eyebrow"><img class="k-wordmark-eyebrow" src="assets/brand/kroma-wordmark.png" alt="KROMA"> · PERSONALIZAÇÕES CONCEITUAIS</p><h1>Uma ideia.<br><span>Várias <img class="k-wordmark-heading" src="assets/brand/kroma-wordmark.png" alt="KROMA">S.</span></h1><p>Explore combinações para a sua mobilidade. Cada personalização é avaliada para o seu modelo antes de confirmar serviço, preço e prazo.</p><div class="k-intro-mark" aria-hidden="true"><img src="assets/brand/kroma-simbolo.png" alt=""></div></section>
+    <section class="k-catalog" id="vitrine" aria-labelledby="vitrine-title"><div class="k-section-heading"><div><p class="k-eyebrow">A VITRINE</p><h2 id="vitrine-title">Conheça as <img class="k-wordmark-heading" src="assets/brand/kroma-wordmark.png" alt="KROMA">S.</h2></div><a class="k-custom" href="#" target="_blank" rel="noopener noreferrer"><img src="assets/brand/kroma-simbolo.png" alt="">Meu personalizado <span>↗</span></a></div>
+      <div class="k-filter-wrap"><div class="k-filters" role="group" aria-label="Filtrar por categoria"></div><p class="k-count" aria-live="polite"></p></div>
+      <div class="k-grid" id="k-grid"></div>
+      <p class="k-note">Os modelos exibidos são estudos visuais. Confirme aplicação, compatibilidade, preço e prazo com a KROMA.</p>
+    </section>
+  </main>
+  <footer class="k-footer"><a href="index.html#inicio"><img src="assets/brand/kroma-wordmark.png" alt="KROMA"></a><span>São José dos Campos, SP</span><a href="index.html#inicio">Voltar ao início ↑</a></footer>
+  <dialog class="k-dialog" id="detail-dialog" aria-labelledby="detail-name"><div class="k-dialog-inner"><button class="k-close" type="button" aria-label="Fechar detalhes">×</button><div class="k-viewer" aria-label="Modelo 3D interativo. Arraste para girar."><div class="k-viewer-badge">CONCEITO 3D · ARRASTE PARA GIRAR</div><canvas id="vehicle-canvas"></canvas><div class="k-viewer-loading" role="status">Carregando visualizador 3D…</div></div><section class="k-detail"><p class="k-eyebrow" id="detail-category"></p><h2 id="detail-name"></h2><p class="k-detail-copy">Estudo de personalização em cores KROMA. A execução depende da avaliação do modelo, das condições da peça e do escopo combinado.</p><div class="k-facts"><div><span>Base</span><b id="detail-base"></b></div><div><span>Compatibilidade</span><b>Confirmar com a KROMA</b></div><div><span>Preço e prazo</span><b>Sob consulta</b></div></div><label class="k-color-label">Escolha uma cor</label><div class="k-colors" role="group" aria-label="Cores do conceito"></div><a class="k-buy" id="detail-buy" target="_blank" rel="noopener noreferrer"><span class="wa-icon" aria-hidden="true">◉</span> Consultar pelo WhatsApp <span>↗</span></a><p class="k-model-note">O visualizador é uma representação 3D conceitual, não um modelo técnico do veículo.</p></section></div></dialog>
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/"}}</script>
+  <script src="contact-config.js"></script><script type="module" src="kromas.js"></script>
+</body>
+</html>

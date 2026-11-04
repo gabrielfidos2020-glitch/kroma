@@ -1,6 +1,6 @@
 /* Dados editáveis da KROMA: atualize o WhatsApp, Instagram e catálogo abaixo. */
 const CONFIG = {
-  whatsapp: "5512982368405", // DDI + DDD + número, somente dígitos.
+  whatsapp: window.KROMA_CONFIG?.whatsapp || "", // Configure em contact-config.js.
   instagramUrl: "", // URL oficial do perfil, quando estiver definido.
   products: [
     {name:"Kit de adesivos",description:"Uma opção para renovar os grafismos da motinha.",compatibility:"Compatibilidade precisa ser confirmada.",art:"assets/images/peca-adesivos-conceito.jpg",message:"Olá! Quero consultar um kit de adesivos. Meu modelo é:"},
