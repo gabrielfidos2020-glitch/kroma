@@ -657,8 +657,9 @@
   .nav-shell .menu-toggle{width:36px;min-width:36px;height:36px;min-height:36px}
 }
 
-/* KROMA wordmarks remain image artwork; the similar retro face covers the site copy. */
-:root{--display:"Righteous","Space Grotesk",sans-serif;--body:"Righteous","Space Grotesk",sans-serif;--brand-display:"Righteous","Space Grotesk",sans-serif}
+/* Local licensed retro display face; official KROMA wordmarks stay as artwork. */
+@font-face{font-family:"Kroma Display";src:url("assets/fonts/BowlbyOneSC-Regular.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
+:root{--display:"Kroma Display","Bowlby One SC","Righteous",sans-serif;--body:"Righteous","Space Grotesk",sans-serif;--brand-display:"Kroma Display","Bowlby One SC","Righteous",sans-serif}
 body,button,input,textarea,select{font-family:var(--body)}
 .identity-kroma{display:flex!important;opacity:1!important;transition:opacity .25s ease}
 .identity-kroma:after{top:49%;height:.105em;min-height:5px;background:#f9eaff;box-shadow:0 0 5px #fff,0 0 13px #bd83ff,0 0 25px rgba(148,69,255,.95);border-radius:99px;transform:scaleX(0);transform-origin:left center}
