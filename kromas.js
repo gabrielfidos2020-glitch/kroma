@@ -14,6 +14,14 @@ const counts = Object.fromEntries(["Todos",...new Set(products.map(p=>p.category
 const filters = document.querySelector(".k-filters"), grid = document.querySelector("#k-grid"), count = document.querySelector(".k-count"), dialog = document.querySelector("#detail-dialog");
 const waUrl = (message)=>PHONE?`https://wa.me/${PHONE.replace(/\D/g,"")}?text=${encodeURIComponent(message)}`:"";
 const missing = "O WhatsApp da KROMA ainda não está configurado. O contato será adicionado em breve.";
+const menuToggle=document.querySelector(".menu-toggle"),siteNav=document.querySelector("#site-nav"),siteHeader=document.querySelector(".k-site-header");
+const closeMenu=()=>{siteNav.classList.remove("is-open");menuToggle.setAttribute("aria-expanded","false");menuToggle.setAttribute("aria-label","Abrir menu");};
+menuToggle.addEventListener("click",()=>{const open=menuToggle.getAttribute("aria-expanded")==="true";menuToggle.setAttribute("aria-expanded",String(!open));menuToggle.setAttribute("aria-label",open?"Abrir menu":"Fechar menu");siteNav.classList.toggle("is-open",!open);});
+siteNav.querySelectorAll("a").forEach(link=>link.addEventListener("click",closeMenu));
+document.addEventListener("keydown",event=>{if(event.key==="Escape"&&menuToggle.getAttribute("aria-expanded")==="true"){closeMenu();menuToggle.focus();}});
+document.addEventListener("click",event=>{if(!siteNav.contains(event.target)&&!menuToggle.contains(event.target))closeMenu();});
+const updateHeader=()=>siteHeader.classList.toggle("is-scrolled",window.scrollY>80);updateHeader();window.addEventListener("scroll",updateHeader,{passive:true});
+document.querySelector(".contact-action").addEventListener("click",()=>{const url=waUrl("Olá! Vim pelo botão Pedir orçamento do topo do site da KROMA e quero personalizar minha moto. Meu modelo é:");if(url)window.open(url,"_blank","noopener,noreferrer");else alert(missing);});
 document.querySelector(".k-custom").addEventListener("click",event=>{event.preventDefault();const url=waUrl("Olá! Quero conversar sobre uma personalização KROMA. Meu modelo é:");if(url)window.open(url,"_blank","noopener,noreferrer");else alert(missing);});
 function renderFilters(active="Todos"){
  filters.innerHTML=["Todos",...new Set(products.map(p=>p.category))].map(cat=>`<button class="k-filter" type="button" data-category="${cat}" aria-pressed="${cat===active}">${cat}<span>${counts[cat]}</span></button>`).join("");

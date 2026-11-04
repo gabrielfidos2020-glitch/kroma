@@ -14,3 +14,7 @@
 
 /* Preserve the approved KROMA lettering wherever the name is prominent. */
 .k-wordmark-nav{width:57px;height:20px;object-fit:contain;vertical-align:middle}.k-header nav a[aria-current]{display:flex;align-items:center;gap:2px;color:var(--green)}.k-wordmark-eyebrow{width:auto;height:14px;vertical-align:-3px;object-fit:contain}.k-wordmark-heading{width:auto;height:.58em;max-width:2.8em;object-fit:contain;vertical-align:-.025em}.k-card h3{display:flex;align-items:center;gap:6px}.k-card-wordmark{width:auto;height:19px;max-width:88px;object-fit:contain}.k-detail-wordmark{width:auto;height:1em;max-width:140px;object-fit:contain;vertical-align:-.13em}@media(max-width:620px){.k-wordmark-nav{width:50px;height:17px}.k-wordmark-heading{height:.54em;max-width:2.4em}.k-card-wordmark{height:16px;max-width:74px}.k-detail-wordmark{max-width:112px}}
+
+/* A vitrine usa exatamente o navbar compartilhado com a página inicial. */
+.site-header.k-site-header{height:84px;margin-bottom:0;}
+@media(max-width:760px){.site-header.k-site-header{height:70px;margin-bottom:0;}}
