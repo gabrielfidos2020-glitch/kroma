@@ -1,0 +1,33 @@
+{
+  "source_original": "referencias/snaptik_7617631118665288974_v3.mp4",
+  "reference_type": "movement_and_composition_only",
+  "silent_video": "M1_motion_silent.mp4",
+  "audio_removed": true,
+  "duration_s": 13.54,
+  "fps": 27.93,
+  "width": 720,
+  "height": 1280,
+  "observed_style": "Estrada residencial arborizada: moto parada em diferentes ângulos, com cortes entre lateral, traseira e frente.",
+  "frames": [
+    {
+      "file": "frame-01_00.50s.jpg",
+      "time_s": 0.5
+    },
+    {
+      "file": "frame-02_02.80s.jpg",
+      "time_s": 2.8
+    },
+    {
+      "file": "frame-03_05.50s.jpg",
+      "time_s": 5.5
+    },
+    {
+      "file": "frame-04_08.30s.jpg",
+      "time_s": 8.3
+    },
+    {
+      "file": "frame-05_12.70s.jpg",
+      "time_s": 12.7
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "source_original": "referencias/snaptik_7647062059967892757_v3.mp4",
+  "reference_type": "movement_and_composition_only",
+  "silent_video": "M1_motion_silent.mp4",
+  "audio_removed": true,
+  "duration_s": 8.99,
+  "fps": 60.0,
+  "width": 1080,
+  "height": 1920,
+  "observed_style": "Montagem curta com cortes diretos entre enquadramentos noturnos de uma moto; a referência muda de veículo e local, então aproveitar somente cadência e cortes.",
+  "frames": [
+    {
+      "file": "frame-01_00.40s.jpg",
+      "time_s": 0.4
+    },
+    {
+      "file": "frame-02_01.80s.jpg",
+      "time_s": 1.8
+    },
+    {
+      "file": "frame-03_03.70s.jpg",
+      "time_s": 3.7
+    },
+    {
+      "file": "frame-04_05.80s.jpg",
+      "time_s": 5.8
+    },
+    {
+      "file": "frame-05_08.30s.jpg",
+      "time_s": 8.3
+    }
+  ]
+}

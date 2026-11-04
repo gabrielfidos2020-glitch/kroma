@@ -37,3 +37,11 @@ Na pasta do projeto, execute `node server.mjs` e abra `http://localhost:8000`. N
 ## Publicação
 
 O site é estático e pode ser servido pelo GitHub Pages a partir da raiz da branch `main`. Depois que o Pages terminar de publicar, acesse `https://gabrielfidos2020-glitch.github.io/kroma/`.
+
+## Materiais de apoio
+
+Briefs e previews de produção ficam em `materiais/antes-de-depois/` e `materiais/previews/`. Backups, capturas e instruções de revisão ficam em `materiais/revisoes/`.
+
+## Materiais de divulgação
+
+O banco de vídeos para divulgação, incluindo o antes/depois silencioso, frames-chave e prompts no padrão BeeMídia, está em [banco de divulgação](banco-de-divulgacao/README.md).

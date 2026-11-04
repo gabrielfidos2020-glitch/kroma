@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#170a20">
+  <title>KROMA — storyboard antes e depois</title>
+  <style>
+    :root{--violet:#170a20;--panel:#21102d;--green:#40e45f;--paper:#f5f1e8;--muted:#c6bacb}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--violet);color:#f5f0f7;font-family:Inter,"Segoe UI",Arial,sans-serif}
+    main{width:min(1140px,calc(100% - 40px));margin:auto;padding:50px 0 42px}
+    header{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px}
+    .eyebrow{margin:0 0 8px;color:var(--green);font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    h1{margin:0;font-size:clamp(28px,5vw,44px);line-height:1;letter-spacing:-.05em}
+    .intro{max-width:400px;margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    article{overflow:hidden;border:1px solid rgba(245,240,247,.15);border-radius:10px;background:var(--panel)}
+    .visual{aspect-ratio:9/14;background:#09050d;position:relative;display:grid;place-items:center;overflow:hidden}
+    .visual img{height:100%;width:100%;object-fit:cover;display:block}
+    .black{background:#020203;text-align:center}
+    .black:before{content:"";width:72px;height:72px;border:1px solid rgba(64,228,95,.28);border-radius:50%;box-shadow:0 0 48px rgba(64,228,95,.12);position:absolute}
+    .black .orb{height:19px;width:19px;border-radius:50%;background:var(--green);box-shadow:0 0 28px var(--green);z-index:1}
+    .black .tag{position:absolute;top:16px;left:16px;color:#8d7c96;font-size:9px;letter-spacing:.14em;text-transform:uppercase}
+    .copy{padding:14px}
+    .time{display:block;color:var(--green);font-size:10px;font-weight:800;letter-spacing:.12em}
+    h2{margin:6px 0;font-size:17px;letter-spacing:-.02em}
+    p{margin:0;color:#c2b6c8;font-size:12px;line-height:1.55}
+    .camera{margin-top:9px;padding-top:9px;border-top:1px solid rgba(245,240,247,.12);color:#e7deeb}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    a{display:inline-flex;align-items:center;min-height:42px;padding:0 14px;border:1px solid rgba(245,240,247,.3);border-radius:6px;color:#f5f0f7;text-decoration:none;font-size:12px;font-weight:700}
+    a:hover{border-color:var(--green);color:var(--green)}
+    a.primary{background:var(--green);color:#102016;border-color:var(--green)}
+    .note{margin-top:19px;color:#a99bae;font-size:11px;line-height:1.6}
+    @media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:520px){main{padding-top:34px}header{display:block}.intro{margin-top:13px}.grid{grid-template-columns:1fr}.visual{aspect-ratio:9/13}}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div><p class="eyebrow">Kroma · antes / depois</p><h1>A transformação no beat.</h1></div>
+      <p class="intro">Storyboard conceitual baseado na referência vertical enviada. O corte principal combina o mesmo ângulo antes/depois com a animação de pulso já aprovada.</p>
+    </header>
+    <section class="grid" aria-label="Storyboard em quatro cenas">
+      <article>
+        <div class="visual"><img src="../../assets/images/kroma-video-01-antes-conceito.png" alt="Scooter conceitual antes da personalização"></div>
+        <div class="copy"><span class="time">00:00–00:02</span><h2>01 · Antes</h2><p>Plano vertical completo, scooter grafite e câmera quase parada.</p><p class="camera"><strong>Câmera:</strong> push-in bem lento, leve movimento de mão.</p></div>
+      </article>
+      <article>
+        <div class="visual black"><span class="tag">preto → pulso Kroma</span><span class="orb"></span></div>
+        <div class="copy"><span class="time">00:02–00:05</span><h2>02 · Assinatura</h2><p>Corte seco para preto. O símbolo verde se transforma em roxo.</p><p class="camera"><strong>Câmera:</strong> fixa. Beat entra no primeiro pulso.</p></div>
+      </article>
+      <article>
+        <div class="visual"><img src="../../assets/images/kroma-video-03-depois-conceito.png" alt="Scooter conceitual depois da personalização verde e roxa"></div>
+        <div class="copy"><span class="time">00:05–00:07,3</span><h2>03 · Depois</h2><p>Match cut do mesmo ângulo; verde Kroma aparece no kick.</p><p class="camera"><strong>Câmera:</strong> aproximação curta e firme.</p></div>
+      </article>
+      <article>
+        <div class="visual"><img src="../../assets/images/kroma-video-04-detalhe-conceito.png" alt="Detalhe conceitual da pintura, farol e roda dianteira"></div>
+        <div class="copy"><span class="time">00:07,3–00:09</span><h2>04 · Detalhe</h2><p>Close no farol, grafismo roxo e roda dianteira.</p><p class="camera"><strong>Câmera:</strong> slide lateral baixo e suave.</p></div>
+      </article>
+    </section>
+    <div class="actions">
+      <a class="primary" href="kroma-antes-depois-brief.md">Abrir prompts e roteiro</a>
+      <a href="../previews/kroma-motion-01.html">Ver animação da logo</a>
+      <a href="../../assets/brand/KROMA-pulso-de-cor-transparente.webm" download>Baixar logo WebM</a>
+    </div>
+    <p class="note">As três imagens são concept art e não representam um serviço já realizado. Para publicar como case real, substituir pelas imagens da moto do cliente.</p>
+  </main>
+</body>
+</html>

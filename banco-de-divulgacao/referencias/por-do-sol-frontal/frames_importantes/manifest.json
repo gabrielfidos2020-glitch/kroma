@@ -1,0 +1,33 @@
+{
+  "source_original": "referencias/snaptik_7678065270509948180_v3.mp4",
+  "reference_type": "movement_and_composition_only",
+  "silent_video": "M1_motion_silent.mp4",
+  "audio_removed": true,
+  "duration_s": 14.7,
+  "fps": 30.0,
+  "width": 576,
+  "height": 1024,
+  "observed_style": "Revelação cinematográfica ao pôr do sol: foco passa de suave para nítido, com moto frontal centralizada em plano baixo.",
+  "frames": [
+    {
+      "file": "frame-01_00.50s.jpg",
+      "time_s": 0.5
+    },
+    {
+      "file": "frame-02_02.60s.jpg",
+      "time_s": 2.6
+    },
+    {
+      "file": "frame-03_05.50s.jpg",
+      "time_s": 5.5
+    },
+    {
+      "file": "frame-04_09.00s.jpg",
+      "time_s": 9.0
+    },
+    {
+      "file": "frame-05_13.40s.jpg",
+      "time_s": 13.4
+    }
+  ]
+}

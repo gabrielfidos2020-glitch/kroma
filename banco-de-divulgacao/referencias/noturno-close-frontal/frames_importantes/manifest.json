@@ -1,0 +1,33 @@
+{
+  "source_original": "referencias/snaptik_7621559306705505554_v3.mp4",
+  "reference_type": "movement_and_composition_only",
+  "silent_video": "M1_motion_silent.mp4",
+  "audio_removed": true,
+  "duration_s": 17.13,
+  "fps": 30.0,
+  "width": 576,
+  "height": 1024,
+  "observed_style": "Noite em área externa iluminada: câmera baixa aproxima-se de uma moto escura e percorre a frente e a lateral.",
+  "frames": [
+    {
+      "file": "frame-01_00.60s.jpg",
+      "time_s": 0.6
+    },
+    {
+      "file": "frame-02_03.50s.jpg",
+      "time_s": 3.5
+    },
+    {
+      "file": "frame-03_07.00s.jpg",
+      "time_s": 7.0
+    },
+    {
+      "file": "frame-04_10.80s.jpg",
+      "time_s": 10.8
+    },
+    {
+      "file": "frame-05_15.60s.jpg",
+      "time_s": 15.6
+    }
+  ]
+}

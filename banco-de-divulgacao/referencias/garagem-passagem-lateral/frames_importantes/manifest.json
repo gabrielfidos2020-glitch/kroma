@@ -1,0 +1,33 @@
+{
+  "source_original": "referencias/snaptik_7575202129565027597_v3.mp4",
+  "reference_type": "movement_and_composition_only",
+  "silent_video": "M1_motion_silent.mp4",
+  "audio_removed": true,
+  "duration_s": 13.63,
+  "fps": 30.0,
+  "width": 720,
+  "height": 1280,
+  "observed_style": "Garagem coberta: moto estacionada em plano geral, aproximação frontal e passagem curta por detalhes da carenagem, retornando ao plano mais aberto.",
+  "frames": [
+    {
+      "file": "frame-01_00.60s.jpg",
+      "time_s": 0.6
+    },
+    {
+      "file": "frame-02_03.60s.jpg",
+      "time_s": 3.6
+    },
+    {
+      "file": "frame-03_05.30s.jpg",
+      "time_s": 5.3
+    },
+    {
+      "file": "frame-04_08.90s.jpg",
+      "time_s": 8.9
+    },
+    {
+      "file": "frame-05_12.70s.jpg",
+      "time_s": 12.7
+    }
+  ]
+}
