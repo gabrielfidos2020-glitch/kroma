@@ -10,11 +10,11 @@ O pack segue o método BeeMídia: anexos identificados pelo papel, regra de prio
 
 Anexar os arquivos na geração e manter estes rótulos na mesma ordem:
 
-- **PRODUCT / CONCEPT IMAGE — P1:** `../../assets/images/estudo-antes.jpg` — scooter conceitual em estado original. Referência de identidade e geometria para este estudo, não produto real de cliente.
-- **SCENE IMAGE — IMG 1 / START FRAME:** `../../assets/images/kroma-video-01-antes-conceito.png` — primeiro quadro exato, scooter antes, plano vertical 3/4 frontal.
+- **PRODUCT / CONCEPT IMAGE — P1:** `../../assets/images/site/projetos/estudo-antes.jpg` — scooter conceitual em estado original. Referência de identidade e geometria para este estudo, não produto real de cliente.
+- **SCENE IMAGE — IMG 1 / START FRAME:** `../../assets/images/campanhas/antes-depois/kroma-video-01-antes-conceito.png` — primeiro quadro exato, scooter antes, plano vertical 3/4 frontal.
 - **SCENE IMAGE — IMG 2:** quadro preto puro da pausa entre antes e assinatura. Não inserir logo na imagem; a assinatura será composta na edição.
-- **SCENE IMAGE — IMG 3:** `../../assets/images/kroma-video-03-depois-conceito.png` — quadro da revelação depois, mesmo ângulo e scooter personalizada.
-- **SCENE IMAGE — IMG 4:** `../../assets/images/kroma-video-04-detalhe-conceito.png` — quadro de detalhe da pintura e grafismo.
+- **SCENE IMAGE — IMG 3:** `../../assets/images/campanhas/antes-depois/kroma-video-03-depois-conceito.png` — quadro da revelação depois, mesmo ângulo e scooter personalizada.
+- **SCENE IMAGE — IMG 4:** `../../assets/images/campanhas/antes-depois/kroma-video-04-detalhe-conceito.png` — quadro de detalhe da pintura e grafismo.
 - **MOTION VIDEO — VIDEO M1:** referência enviada pelo cliente: [TikTok antes e depois](https://vt.tiktok.com/ZSpLYtM9A/). Usar somente como referência de ritmo de montagem e movimento de câmera. Se a ferramenta exigir upload do vídeo, anexar uma cópia silenciosa; não copiar áudio, textos, marca, scooter, cores, cenário ou iluminação do TikTok.
 - **LOGO ANIMATION — VIDEO L1 (composição de pós-produção, não enviar ao gerador):** `../../assets/brand/KROMA-pulso-de-cor-transparente.webm` — animação oficial transparente do símbolo Kroma, duração aproximada de 2,8s. Usar o arquivo como está, centralizado sobre preto.
 
@@ -62,8 +62,8 @@ Escolher uma faixa licenciada e alinhar o primeiro pulso da logo à entrada da m
 
 - [Storyboard visual](kroma-antes-depois-storyboard.html)
 - [Animação oficial da logo](../../assets/brand/KROMA-pulso-de-cor-transparente.webm)
-- [Cena 01 — antes conceitual](../../assets/images/kroma-video-01-antes-conceito.png)
-- [Cena 03 — depois conceitual](../../assets/images/kroma-video-03-depois-conceito.png)
-- [Cena 04 — detalhe conceitual](../../assets/images/kroma-video-04-detalhe-conceito.png)
-- [Estudo antes](../../assets/images/estudo-antes.jpg)
+- [Cena 01 — antes conceitual](../../assets/images/campanhas/antes-depois/kroma-video-01-antes-conceito.png)
+- [Cena 03 — depois conceitual](../../assets/images/campanhas/antes-depois/kroma-video-03-depois-conceito.png)
+- [Cena 04 — detalhe conceitual](../../assets/images/campanhas/antes-depois/kroma-video-04-detalhe-conceito.png)
+- [Estudo antes](../../assets/images/site/projetos/estudo-antes.jpg)
 - [TikTok de referência](https://vt.tiktok.com/ZSpLYtM9A/)

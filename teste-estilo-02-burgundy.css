@@ -1,0 +1,64 @@
+/* KROMA — prévia de estilo 02: Burgundy / Night.
+   Arquivo isolado para comparar; não altera as páginas originais nem o teste 01. */
+:root {
+  --ink: #f5eef1;
+  --muted: #c7b9be;
+  --violet: #151515;
+  --violet-2: #211a1d;
+  --violet-3: #302126;
+  --green: #93032e;
+  --green-dark: #780326;
+  --line: rgba(245,238,241,.16);
+  --display: "Bebas Neue", "Arial Narrow", sans-serif;
+  --body: "DM Sans", Arial, sans-serif;
+  --bg: #151515;
+  --panel: #211a1d;
+  --panel2: #302126;
+  --text: #f5eef1;
+  --retro: "Bebas Neue", "Arial Narrow", sans-serif;
+  --wordmark: var(--retro);
+}
+body { background: #151515; color: #f5eef1; }
+.site-header,.k-site-header { background: rgba(21,21,21,.96); border-color: var(--line); }
+.site-nav>a,.k-header nav a,.hero-bottom a { color: #f5eef1; }
+.button-primary,.whatsapp-float,.k-buy,.k-buy-card { background: #93032e; border-color: #93032e; color: #fff7f9; }
+.button-primary:hover:not(:disabled),.k-buy-card:hover { background: #ae123f; }
+.button-ghost { color: #f5eef1; border-color: rgba(245,238,241,.55); background: rgba(21,21,21,.6); }
+.button-ghost:hover { color: #f5eef1; border-color: #d66a86; }
+.hero h1,.section-heading h2,.project-top h2,.reviews-heading h2,.future-content h2,
+.k-intro h1,.k-section-heading h2,.k-card h3,.k-detail h2,
+h1,h2,h3 { font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: .015em; }
+.hero h1 span,.section-heading h2 span,.project-top h2 span,.reviews-heading h2 span,
+.future-content h2 span,.identity-replacement { font-family: var(--display); font-weight: 400; letter-spacing: inherit; }
+.hero-intro,.section-summary,.step p,.product-body p,.compatibility,.order-strip p,.project-message p { color: #d8cbd0; }
+.hero-visual .visual-frame { background: #211a1d; border-color: var(--line); }
+.hero-visual .visual-frame:before { background: linear-gradient(90deg,rgba(12,12,12,.88),rgba(12,12,12,.58) 34%,rgba(12,12,12,.08) 75%),linear-gradient(0deg,rgba(12,12,12,.54),transparent 45%); }
+.hero-bottom,.steps,.step,.parts-section,.reviews-section,.project-section { border-color: var(--line); }
+.intro-band { background: #93032e; color: #fff7f9; }
+.parts-section { background: #211a1d; }
+.product-card,.project-card,.project-message,.order-strip { background: #211a1d; border-color: var(--line); }
+.product-art { background: #302126; }
+.product-art-label,.visual-label { background: rgba(21,21,21,.9); color: #f5eef1; border-color: var(--line); }
+.review-stage { background: #211a1d; border-color: var(--line); }
+.project-photo { border-color: var(--line); }
+.site-footer,.future-section { background-color: #151515; border-color: var(--line); }
+.nav-shell .header-actions .button-small.button-primary { background: #93032e; background-image: none; color: #fff7f9; border-color: rgba(230,166,182,.56); box-shadow: 0 0 16px rgba(147,3,46,.28); }
+.nav-shell .header-actions .button-small.button-primary::after { opacity: 0; animation: none; }
+.nav-shell .header-actions .button-small.button-primary:hover:not(:disabled) { background: #ae123f; background-image: none; box-shadow: 0 0 20px rgba(147,3,46,.4); }
+.whatsapp-float { box-shadow: 0 0 0 0 rgba(147,3,46,.48),0 10px 30px rgba(0,0,0,.4); }
+.whatsapp-float .whatsapp-mark { fill: #93032e; }
+.whatsapp-float .whatsapp-handset { fill: #151515; }
+@keyframes whatsapp-glow { 0%,100%{box-shadow:0 0 0 0 rgba(147,3,46,.34),0 10px 30px rgba(0,0,0,.4)} 50%{box-shadow:0 0 0 7px rgba(147,3,46,0),0 10px 32px rgba(0,0,0,.43)} }
+.k-card { box-shadow: 0 12px 35px rgba(0,0,0,.28); }
+.k-card:hover { box-shadow: 0 19px 48px rgba(0,0,0,.4),0 0 0 1px rgba(147,3,46,.72); }
+.k-buy-card { background: #93032e; color: #fff7f9; border-color: #93032e; }
+.k-dialog { background: #151515; border-color: rgba(230,166,182,.35); }
+.k-dialog::backdrop { background: rgba(0,0,0,.84); }
+.k-detail { background: #151515; }
+.k-close { background: #302126; border-color: var(--line); }
+.k-viewer { background: radial-gradient(ellipse at 50% 52%,#f4edef,#ded5d8 75%); }
+.k-filter[aria-pressed=true] { background: #93032e; border-color: #93032e; color: #fff7f9; }
+.k-color[aria-pressed=true] { border-color: #e6a6b6; }
+.k-custom { border-color: rgba(230,166,182,.45); background: rgba(147,3,46,.12); }
+.k-custom:hover { background: rgba(147,3,46,.24); box-shadow: 0 0 22px rgba(147,3,46,.2); }
+@media (prefers-reduced-motion: reduce) { .whatsapp-float { animation: none; } }

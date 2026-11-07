@@ -1,0 +1,66 @@
+/* KROMA — prévia de estilo 01: Butter / Green
+   Arquivo isolado para comparação; não muda o tema principal. */
+:root {
+  --ink: #ffebb3;
+  --muted: #e1d5a6;
+  --violet: #013e37;
+  --violet-2: #064b42;
+  --violet-3: #0b584c;
+  --green: #ffebb3;
+  --green-dark: #ead995;
+  --line: rgba(255, 235, 179, .24);
+  --display: "Lobster", "Brush Script MT", cursive;
+  --body: "DM Sans", Arial, sans-serif;
+  --bg: #013e37;
+  --panel: #064b42;
+  --panel2: #0b584c;
+  --text: #ffebb3;
+  --retro: "Lobster", "Brush Script MT", cursive;
+  --wordmark: var(--retro);
+}
+body { background: #013e37; color: #ffebb3; }
+.site-header,.k-site-header { background: rgba(1,62,55,.95); border-color: var(--line); }
+.site-nav>a,.k-header nav a,.hero-bottom a { color: #ffebb3; }
+.button-primary,.whatsapp-float,.k-buy,.k-buy-card { background: #ffebb3; border-color: #ffebb3; color: #013e37; }
+.button-primary:hover:not(:disabled),.k-buy-card:hover { background: #f6dfa0; }
+.button-ghost { color: #ffebb3; border-color: rgba(255,235,179,.65); background: rgba(1,62,55,.56); }
+.button-ghost:hover { color: #ffebb3; border-color: #ffebb3; }
+.hero-intro,.service-lead,.section-summary,.project-message p,.order-strip p { color: #e6dcb8; }
+.hero-visual .visual-frame { background: #064b42; border-color: var(--line); }
+.hero-visual .visual-frame:before { background: linear-gradient(90deg,rgba(1,30,26,.88),rgba(1,30,26,.52) 34%,rgba(1,30,26,.08) 75%),linear-gradient(0deg,rgba(1,30,26,.52),transparent 45%); }
+.hero-bottom,.steps,.step,.parts-section,.reviews-section,.project-section { border-color: var(--line); }
+.intro-band { background: #ffebb3; color: #013e37; }
+.parts-section { background: #064b42; }
+.product-card,.project-card,.project-message,.order-strip { background: #0b584c; border-color: var(--line); }
+.product-body p,.compatibility,.order-strip p,.project-message p { color: #e6dcb8; }
+.product-art { background: #0b584c; }
+.review-stage { background: #064b42; border-color: var(--line); }
+.project-photo { border-color: var(--line); }
+.site-footer { background: #013e37; border-color: var(--line); }
+.future-section { background-color: #064b42; }
+.whatsapp-float { box-shadow: 0 0 0 0 rgba(255,235,179,.45),0 10px 30px rgba(0,0,0,.35); }
+@keyframes whatsapp-glow { 0%,100%{box-shadow:0 0 0 0 rgba(255,235,179,.32),0 10px 30px rgba(0,0,0,.35)} 50%{box-shadow:0 0 0 7px rgba(255,235,179,0),0 10px 32px rgba(0,0,0,.4)} }
+/* Paleta irmã aplicada à vitrine; mantêm-se a composição e os cards existentes. */
+.k-card { box-shadow: 0 12px 35px rgba(0,20,17,.22); }
+.k-card:hover { box-shadow: 0 19px 48px rgba(0,20,17,.34),0 0 0 1px rgba(255,235,179,.7); }
+.k-buy-card { background: #ffebb3; color: #013e37; border-color: #ffebb3; }
+.k-dialog { background: #013e37; border-color: rgba(255,235,179,.35); }
+.k-dialog::backdrop { background: rgba(0,25,22,.82); }
+.k-detail { background: #013e37; }
+.k-close { background: #064b42; border-color: var(--line); }
+.k-viewer { background: radial-gradient(ellipse at 50% 52%,#f8edc6,#e8e1cc 75%); }
+.k-filter[aria-pressed=true] { background: #ffebb3; border-color: #ffebb3; color: #013e37; }
+.k-color[aria-pressed=true] { border-color: #ffebb3; }
+@media (prefers-reduced-motion: reduce) { .whatsapp-float { animation: none; } }
+/* The original stylesheet accent has a stronger brand font; this preview uses the script consistently. */
+.hero h1 span,
+.section-heading h2 span,
+.project-top h2 span,
+.reviews-heading h2 span,
+.future-content h2 span,
+.identity-replacement { font-family: var(--display); font-weight: 400; letter-spacing: inherit; }
+.nav-shell .header-actions .button-small.button-primary { background: #ffebb3; background-image: none; color: #013e37; border-color: rgba(255,235,179,.75); box-shadow: 0 0 16px rgba(255,235,179,.22); }
+.nav-shell .header-actions .button-small.button-primary::after { opacity: 0; animation: none; }
+.nav-shell .header-actions .button-small.button-primary:hover:not(:disabled) { background: #f6dfa0; background-image: none; box-shadow: 0 0 20px rgba(255,235,179,.3); }
+.k-custom { border-color: rgba(255,235,179,.45); background: rgba(255,235,179,.07); }
+.k-custom:hover { background: rgba(255,235,179,.14); box-shadow: 0 0 22px rgba(255,235,179,.15); }

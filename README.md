@@ -8,14 +8,17 @@ Na pasta do projeto, execute `node server.mjs` e abra `http://localhost:8000`. N
 
 ## Onde editar
 
-- `assets/brand/`: logos aprovados. `kroma-simbolo.png` é o símbolo isolado; `kroma-logo-vertical.png` é o logo vertical do painel 02.
-- `assets/images/kroma-hero-conceito.jpg`: imagem conceitual gerada para o destaque visual; não representa um trabalho já feito pela KROMA. Troque pelo retrato real da motinha quando disponível.
-- `assets/images/kroma-hero-mobile.png` e `assets/images/kroma-identidade-mobile.png`: composições verticais dedicadas às seções inicial e “Eu tenho identidade” em telas de até 760 px. As versões desktop seguem nos caminhos existentes.
-- `assets/images/personalizacao-conceito.jpg`: estudo visual ousado da seção Personalização. É conceitual, não um serviço realizado.
-- `assets/images/peca-adesivos-conceito.jpg`, `peca-retrovisores-conceito.jpg` e `peca-carenagem-conceito.jpg`: imagens conceituais dos cards de Peças; não confirmam estoque, preço ou compatibilidade.
-- `assets/images/kromas-showcase.png`: painel conceitual gerado para os cards de autopropelidos, e-bikes, triciclos e patinetes na nova vitrine. As imagens são estudos, não produtos ou projetos confirmados.
+- `assets/brand/`: logos e animações aprovados. Os quadros da vinheta ficam em `assets/brand/animation-frames/`.
+- `assets/images/site/`: imagens usadas pelo site, separadas em `home/`, `projetos/` e `catalogo/`.
+- `assets/images/campanhas/`: imagens conceituais do storyboard antes/depois.
+- `assets/images/arquivo/`: originais e formatos alternativos mantidos como referência; não são usados diretamente pelo site.
+- `assets/images/site/home/kroma-hero-conceito.jpg`: imagem conceitual gerada para o destaque visual; não representa um trabalho já feito pela KROMA. Troque pelo retrato real da motinha quando disponível.
+- `assets/images/site/home/kroma-hero-mobile.png` e `assets/images/site/home/kroma-identidade-mobile.png`: composições verticais dedicadas às seções inicial e “Eu tenho identidade” em telas de até 760 px. As versões desktop seguem nos caminhos existentes.
+- `assets/images/site/home/personalizacao-conceito.jpg`: estudo visual ousado da seção Personalização. É conceitual, não um serviço realizado.
+- `assets/images/site/catalogo/peca-adesivos-conceito.jpg`, `peca-retrovisores-conceito.jpg` e `peca-carenagem-conceito.jpg`: imagens conceituais dos cards de Peças; não confirmam estoque, preço ou compatibilidade.
+- `assets/images/site/catalogo/kromas-showcase.png`: painel conceitual gerado para os cards de autopropelidos, e-bikes, triciclos e patinetes na nova vitrine. As imagens são estudos, não produtos ou projetos confirmados.
 - `kromas.html`, `kromas.css` e `kromas.js`: nova vitrine KROMAS, filtros, cartões, consulta pelo WhatsApp e visualizador 3D conceitual com rotação e troca de cor. Edite nomes, descrições, categorias e imagens no array `products` em `kromas.js`.
-- `assets/images/estudo-antes.jpg` e `estudo-depois.jpg`: par de imagens geradas para um estudo visual conceitual. A seção identifica que não são fotos de um serviço realizado. Substitua pelo antes/depois real ao publicar o primeiro projeto.
+- `assets/images/site/projetos/estudo-antes.jpg` e `estudo-depois.jpg`: par de imagens geradas para um estudo visual conceitual. A seção identifica que não são fotos de um serviço realizado. Substitua pelo antes/depois real ao publicar o primeiro projeto.
 - A seção de depoimentos usa cartões em perspectiva com rolagem vertical. Os textos e nomes atuais são exemplos demonstrativos; substitua por depoimentos reais autorizados antes de usá-los como avaliações de clientes.
 - `assets/illustrations/`: ilustrações temporárias do catálogo. Substitua pelas fotos reais das peças quando estiverem disponíveis. Atualize os caminhos no `app.js`.
 - `contact-config.js`: número de WhatsApp compartilhado pelas duas páginas. Edite aqui o número com DDI e DDD, só com dígitos.
