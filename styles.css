@@ -132,6 +132,27 @@
 @media(max-width:760px){.site-nav{gap:0}.site-nav>a{padding:13px 2px}.header-inner{width:calc(100% - 32px)}.header-actions .button-small{padding-inline:10px;font-size:10px}.menu-toggle{padding:8px 9px}.hero{padding-bottom:20px}.eyebrow{font-size:9px}.section-summary,.step p,.order-strip p,.project-message p{font-size:13px}.product-art-label{font-size:9px}.compatibility{font-size:10px}.product-body h3{font-size:16px}.service-art>span,.photo-caption{font-size:9px}.reviews-section{padding-top:58px}.review-stage{height:340px}.review-columns{top:-82px;transform:translateX(-50%) translate3d(-18px,0,-24px) rotateX(10deg) rotateY(-10deg) rotateZ(17deg) scale(.61)}.review-column{width:195px;height:580px}.review-column-offset{margin-top:47px}.review-card{min-height:132px;padding:14px}.review-set{gap:11px;padding-bottom:11px}.review-fade{background:linear-gradient(180deg,var(--violet),transparent 16%,transparent 80%,var(--violet)),linear-gradient(90deg,var(--violet),transparent 3%,transparent 97%,var(--violet))}}
 @media(prefers-reduced-motion:reduce){.review-track{animation:none}}
 
+/* Loop de abertura: revelação cinematográfica do estudo KROMA FULL. */
+.visual-frame-loop{isolation:isolate;background:#150b19}
+.visual-frame-loop picture{position:absolute;inset:0;display:block;width:100%;height:100%;z-index:0}
+.visual-frame-loop picture img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center 54%;will-change:transform,filter;animation:hero-loop-camera 10s ease-in-out infinite}
+.visual-frame-loop:before{z-index:1}
+.hero-loop-light{position:absolute;z-index:2;inset:0;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 57% 55%,rgba(64,228,95,.38),transparent 38%);mix-blend-mode:screen;animation:hero-loop-glow 10s ease-in-out infinite}
+@keyframes hero-loop-camera{
+  0%,100%{transform:scale(1.03);filter:brightness(.55)}
+  18%{transform:scale(1.055);filter:brightness(.78)}
+  60%{transform:scale(1.1);filter:brightness(1)}
+  86%{transform:scale(1.065);filter:brightness(.96)}
+}
+@keyframes hero-loop-glow{
+  0%,34%,63%,100%{opacity:0}
+  45%,57%{opacity:.8}
+}
+@media(prefers-reduced-motion:reduce){
+  .visual-frame-loop picture img,.hero-loop-light{animation:none}
+  .visual-frame-loop picture img{filter:none;transform:none}
+}
+
 /* Abertura e seção editorial com imagem em destaque, também no mobile. */
 .brand:not(.brand-footer) img{width:84px;height:60px;object-fit:contain}
 .hero-copy{animation:hero-copy-enter .75s cubic-bezier(.2,.7,.2,1) both}

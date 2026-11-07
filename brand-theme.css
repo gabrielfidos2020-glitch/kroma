@@ -76,12 +76,12 @@ body{background:var(--milk);color:var(--ink)}
 .combo-card-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:15px}
 .combo-card-bottom strong{color:var(--plum);font-size:11px}
 .combo-card-bottom .button{min-height:39px;padding-inline:12px;font-size:11px}
-.combo-card-art img[src$='kromas-showcase-plum-milk.png']{position:absolute;left:0;top:0;width:200%;height:200%;max-width:none;object-fit:cover}
+.combo-card-art img[src$='kroma-combos-jet-plum-milk.png']{position:absolute;left:0;top:0;width:200%;height:200%;max-width:none;object-fit:cover}
 .combo-card-art img.q1{left:0!important;top:0!important}
 .combo-card-art img.q2{left:-100%!important;top:0!important}
 .combo-card-art img.q3{left:0!important;top:-100%!important}
 .combo-card-art img.q4{left:-100%!important;top:-100%!important}
-.combo-dialog-art img[src$='kromas-showcase-plum-milk.png']{width:200%;height:200%;min-height:0;max-width:none;object-fit:cover;position:absolute;left:0;top:0}
+.combo-dialog-art img[src$='kroma-combos-jet-plum-milk.png']{width:200%;height:200%;min-height:0;max-width:none;object-fit:cover;position:absolute;left:0;top:0}
 .combo-dialog-art{position:relative;overflow:hidden}
 .combo-dialog-art img.q1{left:0!important;top:0!important}
 .combo-dialog-art img.q2{left:-100%!important;top:0!important}
@@ -153,6 +153,12 @@ body:has(.k-catalog){background:var(--milk);color:var(--ink)}
 .k-card:hover{box-shadow:0 19px 48px rgba(56,25,50,.16),0 0 0 1px rgba(56,25,50,.22)}
 .k-label{background:var(--plum);color:var(--milk)}
 .k-card-category{color:var(--plum)}
+.k-card-art img[src$='kroma-combos-jet-plum-milk.png']{position:absolute;left:0;top:0;width:200%;height:200%;max-width:none;object-fit:cover}
+.k-card-art img[src$='kroma-combos-jet-plum-milk.png'].q1{left:0!important;top:0!important}
+.k-card-art img[src$='kroma-combos-jet-plum-milk.png'].q2{left:-100%!important;top:0!important}
+.k-card-art img[src$='kroma-combos-jet-plum-milk.png'].q3{left:0!important;top:-100%!important}
+.k-card-art img[src$='kroma-combos-jet-plum-milk.png'].q4{left:-100%!important;top:-100%!important}
+.k-section-heading h1{margin:0;color:var(--plum);font:400 clamp(34px,4vw,53px)/1 var(--retro);letter-spacing:-.025em}
 .k-card-sub{color:var(--muted)}
 .k-buy-card{background:var(--plum);border-color:var(--plum);color:var(--milk)}
 .k-buy-card:hover{background:#51294a}
@@ -221,6 +227,30 @@ body:has(.k-catalog){background:var(--milk);color:var(--ink)}
 .whatsapp-float .wa-bubble{fill:none;stroke:#fff;stroke-width:1.8}
 .whatsapp-float .wa-handset{fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .whatsapp-float:hover,.whatsapp-float:focus-visible{background:#20bd5a;color:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.36),0 0 27px 8px rgba(255,255,255,.28),0 8px 24px rgba(0,0,0,.3)}
+.combo-card-addon{margin:10px 0 0;color:var(--plum);font-size:10px;font-weight:700;line-height:1.35}
+.combo-card-bottom strong{font-size:15px}
+.combo-dialog-items{margin:14px 0;color:var(--muted);font-size:13px;line-height:1.6}
+.combo-dialog-total{margin:12px 0 17px;color:var(--ink);font-size:14px}
+.combo-dialog-total strong{color:var(--plum);font-size:21px}
+
+/* WhatsApp clean add-on: small pre-checkout offer with a clear opt-out. */
+.clean-upsell-dialog{width:min(430px,calc(100% - 28px));max-width:none;padding:0;border:1px solid rgba(255,243,230,.45);border-radius:15px;background:var(--plum);color:var(--milk);box-shadow:0 25px 90px rgba(23,9,25,.55);overflow:visible}
+.clean-upsell-dialog::backdrop{background:rgba(18,8,20,.72);backdrop-filter:blur(5px)}
+.clean-upsell-panel{position:relative;padding:30px 27px 24px}
+.clean-upsell-close{position:absolute;top:10px;right:11px;width:34px;height:34px;border:1px solid rgba(255,243,230,.26);border-radius:50%;background:transparent;color:var(--milk);font:24px/1 var(--body);cursor:pointer}
+.clean-upsell-symbol{display:grid;place-items:center;width:44px;height:44px;margin:0 0 16px;border:1px solid rgba(255,243,230,.35);border-radius:50%;background:rgba(255,243,230,.1);color:var(--milk);font-size:22px;box-shadow:0 0 22px rgba(173,118,194,.35)}
+.clean-upsell-panel>.eyebrow{margin:0 0 7px;color:#e2c8e5;font-size:9px;letter-spacing:.16em}
+.clean-upsell-panel h2{margin:0 35px 10px 0;color:var(--milk);font:400 clamp(28px,7vw,35px)/1 var(--display);letter-spacing:-.025em}
+.clean-upsell-panel>p:not(.eyebrow):not(.contact-status){margin:0;color:#f1e4f1;font-size:14px;line-height:1.55}
+.clean-upsell-price{display:flex;align-items:baseline;gap:10px;margin:18px 0 20px;color:var(--milk);font:400 30px/1 var(--display)}
+.clean-upsell-price span{color:#d7c5d8;font:500 11px/1.4 var(--body)}
+.clean-upsell-actions{display:grid;gap:9px}
+.clean-upsell-actions .button{width:100%;min-height:46px;justify-content:center;padding-inline:14px;background:var(--milk);border-color:var(--milk);color:var(--plum);font-size:12px;box-shadow:0 0 22px rgba(229,196,238,.15)}
+.clean-upsell-secondary{width:100%;min-height:41px;border:1px solid rgba(255,243,230,.38);border-radius:6px;background:transparent;color:var(--milk);font:600 12px var(--body);cursor:pointer}
+.clean-upsell-secondary:hover{background:rgba(255,243,230,.1)}
+.clean-upsell-status{color:#fff!important}
+.clean-upsell-dialog.is-clean-selected .clean-upsell-price{display:none}
+.clean-upsell-dialog.is-clean-selected #clean-upsell-skip{margin-top:2px}
 .hero .hero-copy .eyebrow,.hero .hero-copy .eyebrow>span:not(.eyebrow-dot){color:#fff}
 
 @media(max-width:760px){
@@ -277,3 +307,42 @@ body:has(.k-catalog){background:var(--milk);color:var(--ink)}
 }
 @media(max-width:380px){.combo-grid{grid-template-columns:1fr}.combo-card-art{height:165px}.combo-card-body{min-height:175px}}
 @media(prefers-reduced-motion:reduce){.site-header,.brand img{transition:none!important}}
+
+/* Keep service prices visible and use the new generated combo artwork. */
+.k-card-price{margin:0 0 12px;color:var(--plum);font:400 21px/1 var(--display)}
+.combo-card-body{min-height:224px}
+.combo-card-addon{font-size:10px}
+.combo-card-art img[src$='kroma-combos-jet-plum-milk.png']{position:absolute;left:0;top:0;width:200%;height:200%;max-width:none;object-fit:cover}
+.combo-card-art img[src$='kroma-combos-jet-plum-milk.png'].q1{left:0!important;top:0!important}
+.combo-card-art img[src$='kroma-combos-jet-plum-milk.png'].q2{left:-100%!important;top:0!important}
+.combo-card-art img[src$='kroma-combos-jet-plum-milk.png'].q3{left:0!important;top:-100%!important}
+.combo-card-art img[src$='kroma-combos-jet-plum-milk.png'].q4{left:-100%!important;top:-100%!important}
+.combo-dialog-art img[src$='kroma-combos-jet-plum-milk.png']{width:200%;height:200%;min-height:0;max-width:none;position:absolute;left:0;top:0;object-fit:cover}
+.combo-dialog-art img[src$='kroma-combos-jet-plum-milk.png'].q1{left:0!important;top:0!important}
+.combo-dialog-art img[src$='kroma-combos-jet-plum-milk.png'].q2{left:-100%!important;top:0!important}
+.combo-dialog-art img[src$='kroma-combos-jet-plum-milk.png'].q3{left:0!important;top:-100%!important}
+.combo-dialog-art img[src$='kroma-combos-jet-plum-milk.png'].q4{left:-100%!important;top:-100%!important}
+
+/* The condensed type and Milk highlight echo the reference; the reveal follows scroll progress. */
+.future-section .future-content h2{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.025em;line-height:.9;text-shadow:0 0 13px rgba(199,148,234,.48),0 0 34px rgba(139,71,177,.34)}
+.identity-tenha{display:block;margin-bottom:.12em;color:var(--milk);font:400 clamp(72px,9vw,118px)/.83 "Bebas Neue",Impact,sans-serif;letter-spacing:.025em;text-shadow:0 0 13px rgba(199,148,234,.54),0 0 35px rgba(139,71,177,.48)}
+.identity-swap{display:grid;position:relative;align-items:center;justify-items:start;min-width:max-content;line-height:.9}
+.identity-kroma,.identity-replacement{grid-area:1/1;justify-self:start;position:relative;white-space:nowrap}
+.identity-kroma{z-index:0;display:flex!important;align-items:center;opacity:1!important;transition:none!important}
+.identity-kroma:after{display:none!important}
+.identity-kroma-mark{display:block;width:auto;height:.8em;max-width:4em;object-fit:contain;filter:brightness(0) invert(1) drop-shadow(0 0 7px rgba(191,126,230,.62))}
+.identity-replacement{z-index:1;display:inline-block;opacity:1!important;transform:none!important;transition:none!important;clip-path:inset(0 calc(100% - var(--identity-progress, 0%)) 0 0);padding:.02em .12em .04em;background:var(--milk);color:var(--plum)!important;font:400 .86em/.92 "Bebas Neue",Impact,sans-serif;letter-spacing:.025em;text-transform:uppercase;text-shadow:none!important;box-shadow:0 0 18px rgba(222,190,235,.4)}
+.future-section .future-content h2 .identity-swap{margin-top:.02em}
+.k-card-category{color:var(--plum)}
+@media(max-width:760px){
+ .combo-card-body{min-height:240px}
+ .combo-card-addon{min-height:29px}
+ .k-section-heading h1{font-size:35px}
+ .identity-tenha{font-size:clamp(61px,16vw,88px)}
+ .identity-replacement{font-size:.78em}
+ .identity-kroma-mark{height:.72em;max-width:3.7em}
+}
+@media(prefers-reduced-motion:reduce){.identity-replacement{clip-path:none}}
+/* Preserve the full generated scooter in square combo and service artwork. */
+.combo-card-art,.combo-dialog-art,.k-card-art{background:#241326}
+.combo-card-art img,.combo-dialog-art img,.k-card-art img{object-fit:contain}
