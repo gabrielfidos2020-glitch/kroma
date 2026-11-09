@@ -764,3 +764,161 @@ body,button,input,textarea,select{font-family:var(--body)}
   .review-disclaimer{font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){.review-track{animation:none}}
+
+/* Ajustes finais de proporção da abertura. */
+@media(min-width:761px){
+  .hero h1{font-size:clamp(48px,5.5vw,70px)}
+  .hero-intro{max-width:425px;font-size:15px;line-height:1.65}
+}
+@media(max-width:760px){
+  .hero h1{font-size:clamp(34px,8.8vw,40px)}
+  .hero-intro{font-size:13.5px;line-height:1.52}
+}
+
+/* Smaller opening headline and supporting copy. */
+@media(min-width:761px){
+  .hero h1{font-size:clamp(44px,5vw,62px)}
+  .hero-intro{max-width:410px;font-size:14px;line-height:1.6}
+}
+@media(max-width:760px){
+  .hero h1{font-size:clamp(32px,8.2vw,37px)}
+  .hero-intro{font-size:12.5px;line-height:1.5}
+}
+
+
+/* Full bleed campaign hero: background scene first, vehicle cutouts, then copy. */
+.hero{height:min(850px,100svh);min-height:720px;padding:132px max(32px,calc((100% - var(--max))/2)) 0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:0;position:relative;isolation:isolate;overflow:hidden}
+.site-header{margin-bottom:-82px}
+.hero-copy{max-width:560px;padding:0;position:relative;z-index:3;margin:auto 0}
+.hero-visual{position:absolute;inset:0;z-index:0;padding:0;width:100%;height:100%;margin:0;pointer-events:none}
+.hero-background{position:absolute;inset:0;display:block;overflow:hidden;background:#170a20}
+.hero-background img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center 57%;opacity:1;transform:scale(1.055);animation:hero-background-enter 1.15s cubic-bezier(.2,.7,.2,1) both}
+.hero-background:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,10,32,.9) 0%,rgba(23,10,32,.78) 23%,rgba(23,10,32,.42) 44%,rgba(23,10,32,.1) 68%,rgba(23,10,32,.08)),linear-gradient(0deg,rgba(17,8,23,.72),transparent 34%);}
+.hero-background:after{background:linear-gradient(90deg,rgba(23,10,32,.88) 0%,rgba(23,10,32,.72) 27%,rgba(23,10,32,.35) 47%,rgba(23,10,32,.04) 73%),linear-gradient(0deg,rgba(17,8,23,.46),transparent 32%)}
+.hero-bike-layer{position:absolute;inset:0;z-index:1}
+.hero-bike-picture{position:absolute;display:block;bottom:0;width:min(42vw,590px);height:77%;}
+.hero-bike-jet{left:24%;z-index:1}.hero-bike-x12{left:51%;z-index:2}
+.hero-bike-picture img.hero-bike{position:absolute;inset:0;width:100%;height:100%;max-width:none;display:block;object-fit:contain;object-position:center bottom;opacity:0;filter:drop-shadow(0 18px 22px rgba(0,0,0,.32));will-change:transform,opacity}
+.hero .hero-bike-jet img.hero-bike{animation:hero-bike-jet-arrive 1s cubic-bezier(.18,.72,.22,1) .3s both}
+.hero .hero-bike-x12 img.hero-bike{animation:hero-bike-x12-arrive 1s cubic-bezier(.18,.72,.22,1) 1.2s both}
+@keyframes hero-bike-jet-arrive{from{opacity:0;transform:translate3d(-72px,18px,0) scale(.92)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+@keyframes hero-bike-x12-arrive{from{opacity:0;transform:translate3d(72px,18px,0) scale(.92)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+.hero-copy{animation:none}
+.hero .hero-copy .eyebrow,.hero .hero-copy h1,.hero .hero-copy .hero-intro,.hero .hero-copy .hero-actions{opacity:0;transform:translateY(16px);animation-name:hero-copy-enter;animation-duration:.66s;animation-timing-function:cubic-bezier(.2,.7,.2,1);animation-fill-mode:both}
+.hero .hero-copy .eyebrow{animation:hero-copy-enter .66s cubic-bezier(.2,.7,.2,1) 2.3s both}
+.hero .hero-copy h1{animation:hero-copy-enter .66s cubic-bezier(.2,.7,.2,1) 2.48s both}
+.hero .hero-copy .hero-intro{animation:hero-copy-enter .66s cubic-bezier(.2,.7,.2,1) 2.66s both}
+.hero .hero-copy .hero-actions{animation:hero-copy-enter .66s cubic-bezier(.2,.7,.2,1) 2.84s both}
+@keyframes hero-background-enter{from{opacity:0;transform:scale(1.045)}to{opacity:1;transform:scale(1)}}
+@media(min-width:761px){
+  .hero .eyebrow,.hero .hero-intro,.hero .hero-actions{max-width:470px}
+}
+@media(max-width:760px){
+  .site-header{margin-bottom:-68px!important}
+  .hero{height:calc(100svh - 68px);min-height:680px;max-height:920px;padding:98px 20px 32px!important;gap:0;justify-content:flex-end;align-items:stretch;overflow:hidden}
+  .hero .hero-copy,.hero .hero-visual{width:100%;max-width:none}
+  .hero .hero-copy{position:relative;z-index:3;margin:0;padding:0}
+  .hero-background img{object-position:center 58%}
+  .hero-background:after{background:linear-gradient(0deg,rgba(23,10,32,.92) 0%,rgba(23,10,32,.68) 35%,rgba(23,10,32,.14) 70%,rgba(23,10,32,.18)),linear-gradient(90deg,rgba(23,10,32,.32),transparent 70%)}
+  .hero .hero-copy .eyebrow{animation-delay:2.3s}
+  .hero .hero-copy h1{animation-delay:2.48s}
+  .hero .hero-copy .hero-intro{animation-delay:2.66s}
+  .hero .hero-copy .hero-actions{animation-delay:2.84s}
+  .hero .eyebrow{margin-bottom:10px}
+  .hero h1{font-size:clamp(34px,8.2vw,38px);margin-bottom:13px}
+  .hero-intro{display:block;max-width:42ch;margin:0 0 16px;font-size:12.5px;line-height:1.5}
+  .hero-actions{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:8px}
+  .hero-actions .button{min-height:42px;padding-inline:9px;font-size:11px;gap:6px;white-space:nowrap}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-copy .eyebrow,.hero-copy h1,.hero-copy .hero-intro,.hero-copy .hero-actions{animation:none;opacity:1;transform:none}
+}
+
+/* The imported brand stylesheet used to set the old full-screen photo as ::before. */
+.hero:before{display:none!important}
+
+.combo-dialog-art picture{display:block;width:100%;height:100%}.combo-dialog-art img{max-width:100%;object-fit:contain!important}.combo-model-choice{display:flex;gap:9px;margin:12px 0;padding:0;border:0}.combo-model-choice legend{margin-bottom:8px;color:var(--muted);font-size:12px}.combo-model-choice label{cursor:pointer}.combo-model-choice input{position:absolute;opacity:0}.combo-model-choice span{display:inline-flex;padding:7px 14px;border:1px solid rgba(255,243,230,.36);border-radius:999px;color:var(--ink);font-size:12px;font-weight:700}.combo-model-choice input:checked+span{background:var(--milk);color:var(--plum)}
+
+@media(min-width:761px){.hero{min-height:760px}.hero-background img{object-position:center 54%}.hero-copy{max-width:545px}.hero h1{font-size:clamp(48px,5.7vw,76px)}}
+@media(max-width:760px){.hero{min-height:720px}.hero-background img{object-position:center 58%}.hero .hero-copy{max-width:500px}.hero h1{font-size:clamp(34px,8.2vw,40px)}}
+.hero-copy{animation:none}
+@media(min-width:761px){.hero-background img{object-position:center 54%;object-fit:cover;transform-origin:center 58%}.hero-copy{max-width:545px}.hero h1{font-size:clamp(48px,5.7vw,76px)}}
+@media(max-width:760px){.hero{min-height:720px}.hero-background img{object-fit:cover;object-position:center 55%}.hero-background:after{background:linear-gradient(0deg,rgba(23,10,32,.92) 0%,rgba(23,10,32,.72) 34%,rgba(23,10,32,.12) 69%,rgba(23,10,32,.08)),linear-gradient(90deg,rgba(23,10,32,.25),transparent 65%)}.hero .hero-copy{max-width:500px}.hero .hero-copy .eyebrow{animation-delay:1.35s}.hero .hero-copy h1{animation-delay:1.53s}.hero .hero-copy .hero-intro{animation-delay:1.71s}.hero .hero-copy .hero-actions{animation-delay:1.89s}}
+@media(prefers-reduced-motion:reduce){.hero-background img{animation:none;transform:none;opacity:1}}
+.hero-header{z-index:20!important;margin-bottom:-84px!important;background:linear-gradient(180deg,rgba(24,8,31,.82),rgba(24,8,31,.06))!important;border-bottom-color:transparent!important}
+.hero-header .brand img.brand-symbol,.hero-header .brand img.brand-wordmark{filter:brightness(0) invert(1)!important}
+@media(min-width:761px){.hero-header .brand:not(.brand-footer){width:196px!important;flex-direction:row!important;gap:10px!important}.hero-header .brand img.brand-symbol{width:55px!important;height:55px!important}.hero-header .brand img.brand-wordmark{width:130px!important;height:49px!important}}
+@media(max-width:760px){.hero-header{height:70px!important;margin-bottom:-70px!important}.hero-header .brand:not(.brand-footer){width:145px!important;flex-direction:row!important;gap:7px!important}.hero-header .brand img.brand-symbol{width:40px!important;height:40px!important}.hero-header .brand img.brand-wordmark{width:98px!important;height:36px!important}}
+
+/* KROMA hero: the two bikes arrive in sequence; copy follows after both land. */
+.hero-visual{z-index:0}
+.hero-background{z-index:0;background:radial-gradient(ellipse at 50% 55%,#371044 0%,#170a20 70%);}
+.hero-background.hero-bike-jet{z-index:1;clip-path:inset(0 46% 0 0);animation:hero-bike-jet-enter 1.05s cubic-bezier(.18,.72,.22,1) both}
+.hero-background.hero-bike-x12{z-index:2;clip-path:inset(0 0 0 46%);animation:hero-bike-x12-enter 1.05s cubic-bezier(.18,.72,.22,1) .82s both}
+.hero-background img{object-fit:cover;object-position:center 54%;transform:none;animation:none;will-change:transform,opacity}
+.hero-background:after{pointer-events:none;background:linear-gradient(90deg,rgba(23,10,32,.88) 0%,rgba(23,10,32,.72) 27%,rgba(23,10,32,.35) 47%,rgba(23,10,32,.04) 73%),linear-gradient(0deg,rgba(17,8,23,.46),transparent 32%)}
+.hero .hero-copy .eyebrow,.hero .hero-copy h1,.hero .hero-copy .hero-intro,.hero .hero-copy .hero-actions{animation-delay:1.9s}
+.hero .hero-copy .eyebrow{animation-delay:1.9s}.hero .hero-copy h1{animation-delay:2.08s}.hero .hero-copy .hero-intro{animation-delay:2.26s}.hero .hero-copy .hero-actions{animation-delay:2.44s}
+@keyframes hero-bike-jet-enter{from{opacity:0;transform:translate3d(-4vw,14px,0) scale(1.025)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+@keyframes hero-bike-x12-enter{from{opacity:0;transform:translate3d(4vw,14px,0) scale(1.025)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+.hero-header .brand:not(.brand-footer){width:112px!important;height:82px;flex-direction:column!important;align-items:center;justify-content:center;gap:0!important}
+.hero-header .brand img.brand-symbol{width:47px!important;height:43px!important;filter:brightness(0) invert(1) drop-shadow(0 0 4px rgba(255,255,255,.52)) drop-shadow(0 0 12px rgba(210,166,255,.55))!important}
+.hero-header .brand img.brand-wordmark{width:101px!important;height:31px!important;filter:brightness(0) invert(1) drop-shadow(0 0 4px rgba(255,255,255,.56)) drop-shadow(0 0 12px rgba(210,166,255,.55))!important}
+.kroma-wordmark-project,.kroma-wordmark-reviews,.kroma-wordmark-card,.k-wordmark-nav,.k-wordmark-heading,.k-card-wordmark,.k-detail-wordmark,.k-footer img{filter:drop-shadow(0 0 3px rgba(255,255,255,.88)) drop-shadow(0 0 10px rgba(255,255,255,.5)) drop-shadow(0 0 20px rgba(190,136,224,.5))}
+.kroma-wordmark-project{filter:brightness(0) saturate(100%) invert(13%) sepia(18%) saturate(1612%) hue-rotate(258deg) brightness(87%) contrast(95%) drop-shadow(0 0 3px rgba(255,255,255,.9)) drop-shadow(0 0 12px rgba(255,255,255,.62)) drop-shadow(0 0 24px rgba(190,136,224,.58))}
+.kroma-wordmark-reviews{filter:brightness(0) saturate(100%) invert(13%) sepia(18%) saturate(1612%) hue-rotate(258deg) brightness(87%) contrast(95%) drop-shadow(0 0 3px rgba(255,255,255,.9)) drop-shadow(0 0 12px rgba(255,255,255,.62)) drop-shadow(0 0 24px rgba(190,136,224,.58))}
+.section-heading h2,.reviews-heading h2,.k-section-heading h1,.k-section-heading h2,.combo-dialog-content h2,.k-detail h2,.k-card-image-button .k-card-title,.combo-card-name{ text-shadow:0 0 2px #fff,0 0 9px rgba(255,255,255,.72),0 0 20px rgba(255,255,255,.43),0 0 32px rgba(184,122,218,.34)}
+.section-heading h2 .kroma-wordmark,.k-eyebrow img{filter:drop-shadow(0 0 4px #fff) drop-shadow(0 0 12px rgba(255,255,255,.68)) drop-shadow(0 0 24px rgba(187,130,220,.48))}
+@media(max-width:760px){
+ .hero{height:calc(100svh - 70px);min-height:680px;max-height:850px;padding:88px 20px 30px!important;justify-content:flex-end}
+ .hero-background.hero-bike-jet,.hero-background.hero-bike-x12{clip-path:none}
+ .hero-background.hero-bike-jet img,.hero-background.hero-bike-x12 img{top:50%;left:0;width:200%;height:auto;max-width:none;object-fit:unset;transform:translateY(-50%)}
+ .hero-background.hero-bike-x12 img{left:-100%}
+ .hero-background:after{background:linear-gradient(0deg,rgba(23,10,32,.96) 0%,rgba(23,10,32,.82) 32%,rgba(23,10,32,.16) 68%,rgba(23,10,32,.02) 100%)}
+ .hero .hero-copy .eyebrow{animation-delay:1.9s}.hero .hero-copy h1{animation-delay:2.08s}.hero .hero-copy .hero-intro{animation-delay:2.26s}.hero .hero-copy .hero-actions{animation-delay:2.44s}
+ .hero-header .brand:not(.brand-footer){width:94px!important;height:68px}
+ .hero-header .brand img.brand-symbol{width:39px!important;height:36px!important}
+ .hero-header .brand img.brand-wordmark{width:84px!important;height:26px!important}
+ .kroma-wordmark-project,.kroma-wordmark-reviews{filter:brightness(0) saturate(100%) invert(13%) sepia(18%) saturate(1612%) hue-rotate(258deg) brightness(87%) contrast(95%) drop-shadow(0 0 3px rgba(255,255,255,.9)) drop-shadow(0 0 10px rgba(255,255,255,.6)) drop-shadow(0 0 20px rgba(190,136,224,.5))}
+}
+@media(max-width:380px){.hero-header .brand:not(.brand-footer){width:88px!important}.hero-header .brand img.brand-symbol{width:36px!important;height:33px!important}.hero-header .brand img.brand-wordmark{width:78px!important;height:24px!important}}
+@media(prefers-reduced-motion:reduce){
+ .hero-background.hero-bike-jet,.hero-background.hero-bike-x12{animation:none;opacity:1;transform:none}
+ .hero .hero-copy .eyebrow,.hero .hero-copy h1,.hero .hero-copy .hero-intro,.hero .hero-copy .hero-actions{animation:none;opacity:1;transform:none}
+}
+/* Keep each picture layer aligned to the hero canvas (legacy cutout offsets are unused). */
+.hero-background.hero-bike-jet,.hero-background.hero-bike-x12{left:0!important;right:0!important;width:100%!important}
+
+/* Single source-of-truth hero image with device-specific framing and a left-to-right reveal. */
+.hero-background{inset:0!important;left:0!important;right:0!important;width:100%!important;height:100%!important;z-index:1;background:#170a20}
+.hero-background img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 54%;opacity:1;transform:none;animation:hero-image-wipe 1.8s cubic-bezier(.2,.7,.2,1) both!important;will-change:clip-path,opacity}
+.hero-background:after{background:linear-gradient(90deg,rgba(23,10,32,.88) 0%,rgba(23,10,32,.70) 27%,rgba(23,10,32,.32) 47%,rgba(23,10,32,.04) 74%),linear-gradient(0deg,rgba(17,8,23,.46),transparent 32%)}
+.hero .hero-copy{z-index:3}
+.hero .hero-copy .eyebrow{animation-delay:1.75s}.hero .hero-copy h1{animation-delay:1.93s}.hero .hero-copy .hero-intro{animation-delay:2.11s}.hero .hero-copy .hero-actions{animation-delay:2.29s}
+@keyframes hero-image-wipe{0%{clip-path:inset(0 100% 0 0);opacity:.25;transform:scale(1.035)}38%{clip-path:inset(0 55% 0 0);opacity:1;transform:scale(1.015)}100%{clip-path:inset(0 0 0 0);opacity:1;transform:scale(1)}}
+@media(max-width:760px){
+ .hero-background img{object-fit:contain;object-position:center 12%}
+ .hero-background:after{background:linear-gradient(0deg,rgba(23,10,32,.9) 0%,rgba(23,10,32,.55) 30%,rgba(23,10,32,.06) 64%,rgba(23,10,32,.04) 100%)}
+ .hero .hero-copy .eyebrow{animation-delay:1.75s}.hero .hero-copy h1{animation-delay:1.93s}.hero .hero-copy .hero-intro{animation-delay:2.11s}.hero .hero-copy .hero-actions{animation-delay:2.29s}
+}
+@media(prefers-reduced-motion:reduce){.hero-background img{animation:none!important;clip-path:none;transform:none;opacity:1}}
+
+.hero-header .brand:not(.brand-footer){width:120px!important}
+.hero-header .brand img.brand-symbol{width:50px!important;height:46px!important}
+.hero-header .brand img.brand-wordmark{width:108px!important;height:33px!important}
+@media(max-width:760px){.hero-header .brand:not(.brand-footer){width:98px!important}.hero-header .brand img.brand-symbol{width:42px!important;height:39px!important}.hero-header .brand img.brand-wordmark{width:90px!important;height:28px!important}}
+
+/* The wider desktop crop moves both motorcycles clear of the headline column. */
+@media(min-width:761px){.hero-copy{max-width:460px}.hero h1{font-size:clamp(46px,4.25vw,60px);line-height:1.02}.hero-intro{max-width:430px;font-size:14px;line-height:1.58}.hero-background img{object-fit:cover;object-position:center center}}
+
+/* Keep the hero copy and both bikes in separate columns at laptop widths. */
+@media (min-width:761px) and (max-width:1150px){
+  .hero-background img{object-fit:contain;object-position:right center}
+  .hero-copy{max-width:330px!important}
+  .hero h1{font-size:clamp(38px,4vw,46px)!important;line-height:1.02}
+  .hero-intro{max-width:315px!important;font-size:13px!important}
+  .hero-actions{max-width:315px;flex-wrap:wrap;gap:9px}
+  .hero-actions .button{padding-inline:14px}
+}
+@media (min-width:761px) and (max-width:1150px){.hero{min-height:clamp(620px,66.67vw,760px)}}
+@media (min-width:761px) and (max-width:1150px){.hero{height:clamp(620px,66.67vw,760px)!important;min-height:clamp(620px,66.67vw,760px)!important}.hero-background img{object-fit:contain;object-position:right center}}

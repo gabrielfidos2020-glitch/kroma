@@ -1,11 +1,13 @@
 const products = [
-  {id:"adesivagem-completa",name:"Adesivagem completa",category:"Personalização visual",price:230,base:"Toda a carenagem",art:"assets/images/site/combos/kroma-start-jet.png",description:"Personalização de toda a carenagem com vinil adesivo, alterando a cor e o visual da motinha."},
-  {id:"adesivagem-parcial",name:"Adesivagem parcial",category:"Personalização visual",price:120,base:"Partes específicas da motinha",art:"assets/images/site/combos/kroma-start-jet.png",description:"Aplicação de adesivos em partes específicas da motinha, com cores e estilos personalizados."},
-  {id:"led-decorativo",name:"LED decorativo",category:"Som e iluminação",price:160,base:"Conforme compatibilidade do veículo",art:"assets/images/site/combos/kroma-street-jet.png",description:"Instalação de iluminação LED decorativa, conforme compatibilidade do veículo."},
-  {id:"som-bluetooth",name:"Som Bluetooth",category:"Som e iluminação",price:290,base:"Conforme compatibilidade do veículo",art:"assets/images/site/combos/kroma-pulse-jet.png",description:"Instalação de sistema de som amplificado com conexão Bluetooth."},
-  {id:"retrovisores-esportivos",name:"Retrovisores esportivos",category:"Peças e acessórios",price:130,base:"Par de retrovisores compatíveis",art:"assets/images/site/combos/kroma-full-x12.png",description:"Substituição do par de retrovisores por modelos esportivos compatíveis."},
-  {id:"manoplas-esportivas",name:"Manoplas esportivas",category:"Peças e acessórios",price:65,base:"Um par de manoplas",art:"assets/images/site/combos/kroma-full-x12.png",description:"Instalação de um par de manoplas personalizadas."},
-  {id:"kroma-clean",name:"KROMA CLEAN",category:"Limpeza, proteção e segurança",price:80,base:"Limpeza externa + proteção do display",art:"assets/images/site/combos/kroma-start-jet.png",cleanIncluded:true,description:"Limpeza externa completa da motinha e aplicação de película protetora no display."}
+  {id:"adesivagem-completa",name:"Adesivagem completa",category:"Personalização visual",price:230,base:"Toda a carenagem",art:"JET/desktop/JET-ADESIVAGEM-COMPLETA.jpg",mobileArt:"JET/mobile/JET-ADESIVAGEM-COMPLETA.jpg",cardArt:"assets/images/site/service-cards/JET-adesivagem-completa.png",x12Art:"X12/desktop/X12-ADESIVAGEM-COMPLETA-SERVICO-INDIVIDUAL.jpg",x12MobileArt:"X12/mobile/X12-ADESIVAGEM-COMPLETA-SERVICO-INDIVIDUAL.jpg",description:"Personalização de toda a carenagem com vinil adesivo, alterando a cor e o visual da motinha."},
+  {id:"adesivagem-parcial",name:"Adesivagem parcial",category:"Personalização visual",price:120,base:"Partes específicas da motinha",art:"JET/desktop/JET-ADESIVAGEM-PARCIAL-R$150.jpg",mobileArt:"JET/mobile/JET-ADESIVAGEM-PARCIAL-R$150.jpg",cardArt:"assets/images/site/service-cards/JET-adesivagem-parcial.png",x12Art:"X12/desktop/X12-ADESIVAGEM-PARCIAL.jpg",x12MobileArt:"X12/mobile/X12-ADESIVAGEM-PARCIAL.jpg",description:"Aplicação de adesivos em partes específicas da motinha, com cores e estilos personalizados."},
+  {id:"led-decorativo",name:"LED decorativo",category:"Som e iluminação",price:160,base:"Conforme compatibilidade do veículo",art:"JET/desktop/JET-ILUMINACAO-LED.jpg",mobileArt:"JET/mobile/JET-ILUMINACAO-LED.jpg",cardArt:"assets/images/site/service-cards/JET-led-decorativo.png",x12Art:"X12/desktop/X12-ILUMINACAO-LED-SERVICO-INDIVIDUAL.jpg",x12MobileArt:"X12/mobile/X12-ILUMINACAO-LED-SERVICO-INDIVIDUAL.jpg",description:"Instalação de iluminação LED decorativa, conforme compatibilidade do veículo."},
+  {id:"som-bluetooth",name:"Som Bluetooth",category:"Som e iluminação",price:290,base:"Conforme compatibilidade do veículo",art:"JET/desktop/JET-SOM-BLUETOOTH-SERVICO-INDIVIDUAL.jpg",mobileArt:"JET/mobile/JET-SOM-BLUETOOTH-SERVICO-INDIVIDUAL.jpg",cardArt:"assets/images/site/service-cards/JET-som-bluetooth.png",x12Art:"X12/desktop/X12-SOM-BLUETOOTH-SERVICO-INDIVIDUAL.jpg",x12MobileArt:"X12/mobile/X12-SOM-BLUETOOTH-SERVICO-INDIVIDUAL.jpg",description:"Instalação de sistema de som amplificado com conexão Bluetooth."},
+  {id:"retrovisores-esportivos",name:"Retrovisores esportivos",category:"Peças e acessórios",price:130,base:"Par de retrovisores compatíveis",art:"JET/desktop/JET-RETROVISORES-ESPORTIVOS-SERVICO-INDIVIDUAL.jpg",mobileArt:"JET/mobile/JET-RETROVISORES-ESPORTIVOS-SERVICO-INDIVIDUAL.jpg",cardArt:"assets/images/site/service-cards/JET-retrovisores-esportivos.png",x12Art:"X12/desktop/X12-RETROVISORES-ESPORTIVOS-SERVICO-INDIVIDUAL.jpg",x12MobileArt:"X12/mobile/X12-RETROVISORES-ESPORTIVOS-SERVICO-INDIVIDUAL.jpg",description:"Substituição do par de retrovisores por modelos esportivos compatíveis."},
+  {id:"manoplas-esportivas",name:"Manoplas esportivas",category:"Peças e acessórios",price:65,base:"Um par de manoplas",art:"JET/desktop/JET-MANOPLAS-PERSONALIZADAS-SERVICO-INDIVIDUAL.jpg",mobileArt:"JET/mobile/JET-MANOPLAS-PERSONALIZADAS-SERVICO-INDIVIDUAL.jpg",cardArt:"assets/images/site/service-cards/JET-manoplas-esportivas.png",x12Art:"X12/desktop/X12-MANOPLAS-PERSONALIZADAS-SERVICO-INDIVIDUAL.jpg",x12MobileArt:"X12/mobile/X12-MANOPLAS-PERSONALIZADAS-SERVICO-INDIVIDUAL.jpg",description:"Instalação de um par de manoplas personalizadas."},
+  {id:"kroma-clean",name:"KROMA CLEAN",category:"Limpeza, proteção e segurança",price:80,base:"Limpeza externa + proteção do display",art:"JET/desktop/JET-00-ORIGINAL.jpg",mobileArt:"JET/mobile/JET-00-ORIGINAL.jpg",cardArt:"assets/images/site/service-cards/JET-kroma-clean.png",x12Art:"X12/desktop/X12-KROMA-CLEAN.jpg",x12MobileArt:"X12/mobile/X12-KROMA-CLEAN.jpg",cleanIncluded:true,description:"Limpeza externa completa da motinha e aplicação de película protetora no display."},
+  {id:"bau-personalizado",name:"Baú personalizado",category:"Peças e acessórios",price:180,base:"Baú com acabamento visual personalizado",art:"JET/desktop/JET-BAU-PERSONALIZADO-SERVICO-INDIVIDUAL.jpg",mobileArt:"JET/mobile/JET-BAU-PERSONALIZADO-SERVICO-INDIVIDUAL.jpg",cardArt:"assets/images/site/service-cards/JET-bau-personalizado.png",description:"Baú com acabamento personalizado para combinar com o estilo da sua motinha."},
+  {id:"capa-banco",name:"Capa de banco",category:"Peças e acessórios",price:150,base:"Capa para banco compatível",art:"JET/desktop/JET-CAPA-BANCO-SERVICO-INDIVIDUAL.jpg",mobileArt:"JET/mobile/JET-CAPA-BANCO-SERVICO-INDIVIDUAL.jpg",cardArt:"assets/images/site/service-cards/JET-capa-banco.png",x12Art:"X12/desktop/X12-CAPA-DE-BANCO-SERVICO-INDIVIDUAL.jpg",x12MobileArt:"X12/mobile/X12-CAPA-DE-BANCO-SERVICO-INDIVIDUAL.jpg",description:"Capa de banco para proteger o assento e renovar o acabamento da motinha."}
 ];
 
 const filters = document.querySelector(".k-filters");
@@ -65,7 +67,7 @@ function renderCards(category = "Todos") {
   const list = category === "Todos" ? products : products.filter(product => product.category === category);
   count.textContent = `${list.length} ${list.length === 1 ? "serviço" : "serviços"}`;
   grid.innerHTML = list.map(product =>
-    `<article class="k-card"><div class="k-card-art"><img src="${product.art}" alt="Imagem conceitual de ${product.name}" loading="lazy"><span class="k-label">PRÉVIA VISUAL</span></div><div class="k-card-body"><span class="k-card-category">${product.category}</span><h3>${product.name}</h3><p class="k-card-sub">${product.description}</p><div class="k-card-price">${money(product.price)}</div><div class="k-card-actions"><button class="k-buy-card" type="button" data-buy="${product.id}"><svg class="wa-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.15a9.78 9.78 0 0 0-8.34 14.88l-1.3 4.82 4.94-1.3A9.8 9.8 0 1 0 12 2.15Zm0 17.05a7.42 7.42 0 0 1-3.78-1.03l-.27-.16-2.8.74.75-2.73-.18-.28A7.43 7.43 0 1 1 12 19.2Zm4.08-5.56c-.22-.11-1.31-.65-1.51-.73-.2-.07-.35-.11-.5.11-.15.22-.57.73-.7.88-.13.15-.26.17-.49.06-.22-.11-.94-.35-1.78-1.09-.66-.59-1.1-1.31-1.23-1.53-.13-.23-.01-.35.1-.46.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.08-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.42c-.15 0-.39.06-.59.28-.2.22-.77.75-.77 1.83s.79 2.12.9 2.27c.11.15 1.55 2.37 3.75 3.32.52.23.93.37 1.25.47.53.17 1.01.15 1.39.09.42-.06 1.31-.54 1.5-1.05.19-.52.19-.96.13-1.05-.06-.09-.2-.15-.42-.26Z"/></svg> Consultar</button><button class="k-details" type="button" data-details="${product.id}">Detalhes</button></div></div></article>`
+    `<article class="k-card"><div class="k-card-art"><picture><img src="${product.cardArt||product.art}" alt="Imagem conceitual de ${product.name}" loading="lazy"></picture><button class="k-card-image-button" type="button" data-details="${product.id}" aria-label="Ver detalhes de ${product.name}"><span class="k-card-title">${product.name}</span></button><button class="k-card-whatsapp" type="button" data-buy="${product.id}" aria-label="Comprar ${product.name} pelo WhatsApp"><svg class="wa-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.4A12.2 12.2 0 0 0 5.5 21.8L4 27.5l5.9-1.5A12.2 12.2 0 1 0 16 3.4Z"/><path d="M11.2 9.7c-.4 0-.9.2-1.2.6-.4.4-1.1 1.1-1.1 2.6s1.1 3.1 1.3 3.3c.2.2 2.2 3.6 5.5 4.9 2.7 1.1 3.3.9 3.9.8.6-.1 1.9-.8 2.1-1.5.3-.8.3-1.4.2-1.6-.1-.2-.4-.3-.7-.5l-2.2-1c-.3-.1-.5-.2-.8.2l-1.1 1.2c-.2.2-.4.2-.7.1-.3-.1-1.4-.5-2.6-1.5-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.5c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.6-.7-.6h-.6Z"/></svg> Comprar</button></div></article>`
   ).join("");
   grid.querySelectorAll("[data-buy]").forEach(button => button.addEventListener("click", () => buyProduct(products.find(product => product.id === button.dataset.buy))));
   grid.querySelectorAll("[data-details]").forEach(button => button.addEventListener("click", () => openDetails(products.find(product => product.id === button.dataset.details))));
@@ -88,12 +90,32 @@ function openDetails(product) {
   document.querySelector("#detail-copy").textContent = product.description;
   const image = document.querySelector("#gallery-image");
   const thumbs = document.querySelector("#gallery-thumbs");
-  image.style.backgroundImage = `url("${product.art}")`;
-  image.style.backgroundSize = "cover";
+  document.querySelector(".service-model-choice")?.remove();
+  const art = product.art;
+  const mobileArt = product.mobileArt;
+  image.innerHTML = `${mobileArt?`<source media="(max-width:760px)" srcset="${mobileArt}">`:""}<img src="${art}" alt="Imagem conceitual de ${product.name}">`;
+  image.style.backgroundImage = "none";
+  image.style.backgroundSize = "contain";
   image.style.backgroundPosition = "center";
   image.setAttribute("aria-label", `Imagem conceitual de ${product.name}`);
   document.querySelector("#gallery-caption").textContent = "Imagem conceitual";
   thumbs.hidden = true;
+  const oldChoice = document.querySelector(".service-model-choice");
+  oldChoice?.remove();
+  if (product.x12Art || product.id === "adesivagem-completa" || product.id === "adesivagem-parcial") {
+    const choice = document.createElement("fieldset");
+    choice.className = "combo-model-choice service-model-choice";
+    choice.innerHTML = '<legend>Modelo para visualizar</legend><label><input type="radio" name="service-model" value="jet" checked><span>JET</span></label><label><input type="radio" name="service-model" value="x12"><span>X12</span></label>';
+    choice.addEventListener("change", () => {
+      const isX12 = choice.querySelector("[name='service-model']:checked").value === "x12";
+      const selectedArt = isX12 ? product.x12Art : product.art;
+      image.querySelector("img").src = selectedArt;
+      image.querySelector("img").alt = `Imagem conceitual de ${product.name} para ${isX12 ? "X12" : "JET"}`;
+      const mobileSource = image.querySelector("source");
+      if (mobileSource) mobileSource.srcset = isX12 ? product.x12MobileArt : product.mobileArt;
+    });
+    document.querySelector("#detail-category").after(choice);
+  }
   document.querySelector("#service-note").textContent = "Preço comercial atual. Confirme compatibilidade e instalação com a KROMA antes de fechar.";
   document.querySelector("#detail-buy").onclick = event => {
     event.preventDefault();

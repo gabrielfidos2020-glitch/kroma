@@ -16,16 +16,15 @@
 </head>
 <body>
   <a class="skip-link" href="#vitrine">Pular para os serviços</a>
-  <header class="site-header k-site-header">
+  <header class="site-header hero-header k-site-header">
     <div class="header-inner">
       <a class="brand" href="index.html#inicio" aria-label="KROMA — início"><img class="brand-symbol" src="assets/brand/kroma-simbolo.png" alt=""><img class="brand-wordmark" src="assets/brand/kroma-wordmark.png" alt="KROMA"></a>
       <div class="nav-shell">
         <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-          <a href="index.html#combos">Combos</a><a href="#vitrine" aria-current="page">Serviços</a>
+          <a href="index.html#personalizacao">Personalização</a><a href="index.html#combos">Combos</a><a href="#vitrine" aria-current="page">Vitrine</a>
         </nav>
         <div class="header-actions">
-          <a class="k-home-link" href="index.html#inicio" aria-label="Voltar ao início" title="Início"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 10.5 8.5-7 8.5 7v9.25a1.25 1.25 0 0 1-1.25 1.25h-5.5v-6.5h-3.5V21h-5.5a1.25 1.25 0 0 1-1.25-1.25z"/></svg></a>
-          <button class="button button-small button-primary contact-action" type="button">Pedir orçamento</button>
+          <button class="button button-small button-primary contact-action" data-contact="quote-header" type="button">Pedir orçamento</button>
           <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav"><span class="menu-glyph" aria-hidden="true"><i></i><i></i><i></i></span></button>
         </div>
       </div>
@@ -34,7 +33,7 @@
   <main>
     <section class="k-catalog" id="vitrine" aria-labelledby="vitrine-title">
       <div class="k-section-heading">
-        <div><p class="k-eyebrow">SERVIÇOS INDIVIDUAIS</p><h1 id="vitrine-title">Escolha seu serviço.</h1></div>
+        <div><p class="k-eyebrow">SERVIÇOS INDIVIDUAIS</p><h1 id="vitrine-title">Escolha seu serviço</h1></div>
         <a class="k-custom" href="#" aria-label="Falar com a KROMA sobre uma personalização"><img src="assets/brand/kroma-simbolo.png" alt="">Meu personalizado <span>↗</span></a>
       </div>
       <div class="k-filter-wrap"><div class="k-filters" role="group" aria-label="Filtrar por categoria"></div><p class="k-count" aria-live="polite"></p></div>
@@ -59,7 +58,7 @@
   <dialog class="k-dialog" id="detail-dialog" aria-labelledby="detail-name">
     <div class="k-dialog-inner">
       <button class="k-close" type="button" aria-label="Fechar detalhes">×</button>
-      <div class="k-viewer" aria-label="Imagem ilustrativa do serviço"><div class="k-viewer-badge">PRÉVIA VISUAL</div><div class="k-gallery-image angle-0" id="gallery-image" role="img" aria-label="Imagem ilustrativa do serviço"></div><div class="k-gallery-caption" id="gallery-caption">Imagem ilustrativa</div><div class="k-gallery-thumbs" id="gallery-thumbs" role="group" aria-label="Ver imagens do serviço"></div></div>
+      <div class="k-viewer" aria-label="Imagem ilustrativa do serviço"><div class="k-viewer-badge">PRÉVIA VISUAL</div><picture class="k-gallery-image angle-0" id="gallery-image" role="img" aria-label="Imagem ilustrativa do serviço"></picture><div class="k-gallery-caption" id="gallery-caption">Imagem ilustrativa</div><div class="k-gallery-thumbs" id="gallery-thumbs" role="group" aria-label="Ver imagens do serviço"></div></div>
       <section class="k-detail">
         <p class="k-eyebrow" id="detail-category"></p><h2 id="detail-name"></h2><p class="k-detail-copy" id="detail-copy"></p>
         <div class="k-facts"><div><span>Aplicação</span><b id="detail-base"></b></div><div><span>Compatibilidade</span><b>Confirmar com a KROMA</b></div><div><span>Preço</span><b id="detail-price"></b></div></div>
